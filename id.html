@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>개인 정보 입력</title>
+  <style>
+    
+  </style>
+</head>
+<body>
+  <form>
+    <fieldset>
+  <legend><h2>개인 정보 입력</h2></legend>
+  아이디 : <input type="text" name="ID"> <button type="button" onclick="alert">ID중복검사</button>
+  <p></p>
+  생년월일 : <input type="date" name="birth_day">
+  <p></p>
+  성별 : 
+  <input type="radio" name="sex" value="male"> 남성
+  <input type="radio" name="sex" value="female"> 여성
+  <p></p>
+  E-mail: <input type="text" name="E-mail">
+  <p></p>
+  메일수신 : 
+  <input type="radio" name="reception" value="agree">수신동의
+  <input type="radio" name="reception" value="disagree">수신거부
+  <p></p>
+  핸드폰: 
+  <select name="number">
+    <option value="1" selected>010</option>
+    <option value="2">011</option>
+    <option value="3">017</option>
+    <option value="4">018</option>
+  </select>
+   - 
+  <input type="text" name="middle_number">
+   - 
+   <input type="text" name="last_number">
+  <p></p>
+  직업 : 
+  <select name="job">
+    <option value="1" selected>학생 </option>
+    <option value="2">직장인</option>
+    <option value="3">주부</option>
+    <option value="4">무직</option>
+  </select>
+  <p></p>
+  취미 : 
+  <input type="checkbox" name="hobby" value="shopping"> 쇼핑
+  <input type="checkbox" name="hobby" value="internet"> 인터넷
+  <input type="checkbox" name="hobby" value="music"> 음악감상
+  <input type="checkbox" name="hobby" value="book"> 독서
+  <input type="checkbox" name="hobby" value="sports"> 스포츠
+  <p></p>
+  자기소개 : 
+  <textarea rows="5" cols="50"></textarea>
+</fieldset>
+<p></p>
+<input type="submit" value="등록">
+<input type="reset" value="초기화">
+</form>
+</body>
+</html>
